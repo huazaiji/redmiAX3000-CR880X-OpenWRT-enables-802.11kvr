@@ -1,9 +1,10 @@
-使用的固件是hzyitc/openwrt-redmi-ax3000
+The firmware used is github:hzyitc/openwrt-redmi-ax3000
 
-固件默认是使用wpad-basic-wolfssl，导致开启802.11v后无线不能正常工作
+The default plug-in for firmware is wpad-basic-wolfssl，As a result, the wireless does not work properly after 802.11v is turned on
 
-把wpad-basic-wolfssl替换成wpad-openssl
-然后在/etc/config/wireless设定以下：
+Replace wpad-basic-wolfssl with wpad-openssl
+
+Then set /etc/config/wireless to the following:
 
 option ieee80211k '1'
 
@@ -23,4 +24,6 @@ option ft_psk_generate_local '1'
 
 option encryption 'psk2+ccmp'
 
-已成功开启802.11krv
+
+
+802.11krv has been successfully enabled！
