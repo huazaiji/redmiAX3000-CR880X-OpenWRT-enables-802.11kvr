@@ -2,7 +2,9 @@ The firmware used is github:hzyitc/openwrt-redmi-ax3000
 
 The default plug-in for firmware is wpad-basic-wolfssl，As a result, the wireless does not work properly after 802.11v is turned on
 
-Replace wpad-basic-wolfssl with wpad-openssl
+Workaround：
+
+Update the software library，Replace wpad-basic-wolfssl with wpad-openssl
 
 Then set /etc/config/wireless to the following:
 
